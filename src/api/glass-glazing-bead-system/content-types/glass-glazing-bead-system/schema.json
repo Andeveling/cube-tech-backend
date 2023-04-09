@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "glass_glazing_bead_systems",
+  "info": {
+    "singularName": "glass-glazing-bead-system",
+    "pluralName": "glass-glazing-bead-systems",
+    "displayName": "glass_glazing_bead_system",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "glass": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::glass.glass"
+    },
+    "glass_caliber": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::glass-caliber.glass-caliber"
+    },
+    "glazing_bead_profile": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::glazing-bead-profile.glazing-bead-profile"
+    },
+    "system_pvc": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::system-pvc.system-pvc",
+      "private": true,
+      "inversedBy": "glass_glazing_bead_systems"
+    }
+  }
+}

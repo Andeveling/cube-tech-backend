@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "reinforcement_screws",
+  "info": {
+    "singularName": "reinforcement-screw",
+    "pluralName": "reinforcement-screws",
+    "displayName": "reinforcement_screw"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "id_provider": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "price": {
+      "type": "decimal"
+    }
+  }
+}

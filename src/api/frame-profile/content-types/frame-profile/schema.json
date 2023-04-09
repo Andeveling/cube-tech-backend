@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "collectionName": "frame_profiles",
+  "info": {
+    "singularName": "frame-profile",
+    "pluralName": "frame-profiles",
+    "displayName": "frame_profile",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "id_provider": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "name": {
+      "type": "string",
+      "required": true,
+      "maxLength": 100
+    },
+    "price": {
+      "type": "decimal",
+      "default": 0,
+      "required": true,
+      "unique": false
+    },
+    "reinforcement_profile": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::reinforcement-profile.reinforcement-profile"
+    },
+    "cuttingGlassSize": {
+      "type": "integer",
+      "default": 22,
+      "required": true
+    },
+    "cuttingTransomSize": {
+      "type": "integer"
+    },
+    "cuttingSashSize": {
+      "type": "integer"
+    }
+  }
+}

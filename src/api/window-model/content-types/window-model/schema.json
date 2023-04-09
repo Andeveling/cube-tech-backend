@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "window_models",
+  "info": {
+    "singularName": "window-model",
+    "pluralName": "window-models",
+    "displayName": "window_model",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "frame_profile": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::frame-profile.frame-profile"
+    },
+    "sash_profile": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::sash-profile.sash-profile"
+    },
+    "transom_profile": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::transom-profile.transom-profile"
+    },
+    "system_pvc": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::system-pvc.system-pvc",
+      "private": true,
+      "inversedBy": "window_models"
+    },
+    "hardware_kit": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::hardware-kit.hardware-kit"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "striker_quantities",
+  "info": {
+    "singularName": "striker-quantity",
+    "pluralName": "striker-quantities",
+    "displayName": "striker_quantity"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "striker": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::striker.striker"
+    },
+    "quantity": {
+      "type": "integer",
+      "default": 1
+    }
+  }
+}

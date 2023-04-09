@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sash_profiles",
+  "info": {
+    "singularName": "sash-profile",
+    "pluralName": "sash-profiles",
+    "displayName": "sash_profile",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "id_provider": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": false
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "reinforcement_profile": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::reinforcement-profile.reinforcement-profile"
+    },
+    "cuttingGlassSize": {
+      "type": "integer",
+      "default": 101,
+      "required": true
+    },
+    "cuttingTransomSize": {
+      "type": "integer"
+    },
+    "cuttingSashSize": {
+      "type": "integer",
+      "default": 0
+    }
+  }
+}

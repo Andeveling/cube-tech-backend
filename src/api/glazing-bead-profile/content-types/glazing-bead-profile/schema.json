@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "glazing_bead_profiles",
+  "info": {
+    "singularName": "glazing-bead-profile",
+    "pluralName": "glazing-bead-profiles",
+    "displayName": "glazing_bead_profile",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "id_provider": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "name": {
+      "type": "string",
+      "required": true,
+      "maxLength": 100
+    },
+    "price": {
+      "type": "decimal"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "strikers",
+  "info": {
+    "singularName": "striker",
+    "pluralName": "strikers",
+    "displayName": "striker",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "id_provider": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "price": {
+      "type": "decimal"
+    }
+  }
+}

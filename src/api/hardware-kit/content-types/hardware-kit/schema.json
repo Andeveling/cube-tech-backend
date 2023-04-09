@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "hardware_kits",
+  "info": {
+    "singularName": "hardware-kit",
+    "pluralName": "hardware-kits",
+    "displayName": "hardware_kit",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "total": {
+      "type": "float"
+    },
+    "mullion_quantities": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::mullion-quantity.mullion-quantity"
+    },
+    "striker_quantities": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::striker-quantity.striker-quantity"
+    },
+    "cremona_quantities": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::cremona-quantity.cremona-quantity"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "screws",
+  "info": {
+    "singularName": "screw",
+    "pluralName": "screws",
+    "displayName": "screw"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "id_provider": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "name": {
+      "type": "string",
+      "maxLength": 100,
+      "required": true,
+      "unique": false
+    },
+    "price": {
+      "type": "decimal",
+      "required": true
+    }
+  }
+}

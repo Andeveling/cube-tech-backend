@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "glass_calibers",
+  "info": {
+    "singularName": "glass-caliber",
+    "pluralName": "glass-calibers",
+    "displayName": "glass_caliber",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "caliber": {
+      "type": "integer"
+    },
+    "title": {
+      "type": "string"
+    }
+  }
+}

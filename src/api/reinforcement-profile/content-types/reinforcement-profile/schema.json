@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "reinforcement_profiles",
+  "info": {
+    "singularName": "reinforcement-profile",
+    "pluralName": "reinforcement-profiles",
+    "displayName": "reinforcement_profile",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "id_provider": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "name": {
+      "type": "string",
+      "maxLength": 100
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "reinforcement_screw": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::reinforcement-screw.reinforcement-screw"
+    }
+  }
+}

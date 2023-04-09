@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "system_pvcs",
+  "info": {
+    "singularName": "system-pvc",
+    "pluralName": "system-pvcs",
+    "displayName": "system-pvc",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "window_models": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::window-model.window-model",
+      "mappedBy": "system_pvc"
+    },
+    "glass_glazing_bead_systems": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::glass-glazing-bead-system.glass-glazing-bead-system",
+      "mappedBy": "system_pvc"
+    }
+  }
+}
