@@ -4,7 +4,8 @@
   "info": {
     "singularName": "cremona-quantity",
     "pluralName": "cremona-quantities",
-    "displayName": "cremona_quantity"
+    "displayName": "cremona_quantity",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -19,6 +20,9 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::cremona.cremona"
+    },
+    "model": {
+      "type": "string"
     }
   }
 }

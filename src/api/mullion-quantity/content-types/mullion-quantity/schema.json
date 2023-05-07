@@ -4,7 +4,8 @@
   "info": {
     "singularName": "mullion-quantity",
     "pluralName": "mullion-quantities",
-    "displayName": "mullion_quantity"
+    "displayName": "mullion_quantity",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -19,6 +20,9 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::mullion.mullion"
+    },
+    "model": {
+      "type": "string"
     }
   }
 }

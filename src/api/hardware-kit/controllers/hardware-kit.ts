@@ -3,6 +3,7 @@
  */
 
 import { factories } from "@strapi/strapi"
+import { ApiHardwareKitHardwareKit } from "../../../../schemas"
 
 export default factories.createCoreController("api::hardware-kit.hardware-kit", ({ strapi }) => ({
   async customAction(ctx) {

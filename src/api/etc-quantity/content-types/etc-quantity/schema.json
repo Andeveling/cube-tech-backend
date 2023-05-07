@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "etc_quantities",
+  "info": {
+    "singularName": "etc-quantity",
+    "pluralName": "etc-quantities",
+    "displayName": "Etc_quantity",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "quantity": {
+      "type": "integer"
+    },
+    "model": {
+      "type": "string"
+    },
+    "etc_accessory": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::etc-accessory.etc-accessory"
+    }
+  }
+}
