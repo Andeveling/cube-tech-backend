@@ -27,6 +27,9 @@
       "relation": "oneToMany",
       "target": "api::glass-glazing-bead-system.glass-glazing-bead-system",
       "mappedBy": "system_pvc"
+    },
+    "showName": {
+      "type": "string"
     }
   }
 }
