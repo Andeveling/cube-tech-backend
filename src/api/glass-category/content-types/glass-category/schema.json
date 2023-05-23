@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "glass_categories",
+  "info": {
+    "singularName": "glass-category",
+    "pluralName": "glass-categories",
+    "displayName": "glass_category",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "default": "Simple"
+    },
+    "glasses": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::glass.glass"
+    },
+    "glassType": {
+      "type": "enumeration",
+      "enum": [
+        "monolithic",
+        "insulated",
+        "laminated"
+      ]
+    },
+    "features": {
+      "type": "json"
+    }
+  }
+}

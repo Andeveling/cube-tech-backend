@@ -41,6 +41,27 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::hardware-kit.hardware-kit"
+    },
+    "draw_ref": {
+      "type": "string",
+      "default": "O",
+      "required": false
+    },
+    "minH": {
+      "type": "integer",
+      "default": 300
+    },
+    "maxH": {
+      "type": "integer",
+      "default": 300
+    },
+    "minW": {
+      "type": "integer",
+      "default": 300
+    },
+    "maxW": {
+      "type": "integer",
+      "default": 300
     }
   }
 }

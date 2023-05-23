@@ -21,6 +21,15 @@
       "type": "decimal",
       "required": true,
       "unique": false
+    },
+    "description": {
+      "type": "text"
+    },
+    "features": {
+      "type": "json"
+    },
+    "nameUI": {
+      "type": "string"
     }
   }
 }
