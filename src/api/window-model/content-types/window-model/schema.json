@@ -34,7 +34,6 @@
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::system-pvc.system-pvc",
-      "private": true,
       "inversedBy": "window_models"
     },
     "hardware_kit": {
@@ -62,6 +61,11 @@
     "maxW": {
       "type": "integer",
       "default": 300
+    },
+    "isDoor": {
+      "type": "boolean",
+      "default": false,
+      "required": true
     }
   }
 }

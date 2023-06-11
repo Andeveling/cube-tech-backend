@@ -30,6 +30,18 @@
     },
     "nameUI": {
       "type": "string"
+    },
+    "glass_category": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::glass-category.glass-category",
+      "inversedBy": "glasses"
+    },
+    "glass_glazing_bead_system": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::glass-glazing-bead-system.glass-glazing-bead-system",
+      "inversedBy": "glass"
     }
   }
 }

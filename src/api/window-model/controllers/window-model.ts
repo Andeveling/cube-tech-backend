@@ -12,7 +12,7 @@ export default factories.createCoreController("api::window-model.window-model", 
 
     const sanitizedResults = await this.sanitizeOutput(entity, ctx)
 
-    console.log(sanitizedQueryParams)
+    // console.log(sanitizedQueryParams)
 
     if (sanitizedResults.hardware_kit) {
       if (sanitizedResults.hardware_kit.cremona_quantities)

@@ -1,0 +1,19 @@
+{
+  "kind": "singleType",
+  "collectionName": "trms",
+  "info": {
+    "singularName": "trm",
+    "pluralName": "trms",
+    "displayName": "TRM"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "USDCOP": {
+      "type": "float",
+      "required": true
+    }
+  }
+}

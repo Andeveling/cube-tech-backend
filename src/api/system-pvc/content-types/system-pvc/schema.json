@@ -30,6 +30,21 @@
     },
     "showName": {
       "type": "string"
+    },
+    "imageUrl": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "features": {
+      "type": "json"
+    },
+    "imageWindow": {
+      "type": "string"
+    },
+    "imageDoor": {
+      "type": "string"
     }
   }
 }

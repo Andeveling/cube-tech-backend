@@ -18,7 +18,8 @@
     "glass": {
       "type": "relation",
       "relation": "oneToOne",
-      "target": "api::glass.glass"
+      "target": "api::glass.glass",
+      "inversedBy": "glass_glazing_bead_system"
     },
     "glass_caliber": {
       "type": "relation",

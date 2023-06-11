@@ -1,0 +1,22 @@
+{
+  "kind": "singleType",
+  "collectionName": "admin_rules",
+  "info": {
+    "singularName": "admin-rule",
+    "pluralName": "admin-rules",
+    "displayName": "adminRule"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "utility": {
+      "type": "integer",
+      "default": 30
+    },
+    "TRM": {
+      "type": "float"
+    }
+  }
+}

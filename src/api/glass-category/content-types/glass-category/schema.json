@@ -20,7 +20,8 @@
     "glasses": {
       "type": "relation",
       "relation": "oneToMany",
-      "target": "api::glass.glass"
+      "target": "api::glass.glass",
+      "mappedBy": "glass_category"
     },
     "glassType": {
       "type": "enumeration",
